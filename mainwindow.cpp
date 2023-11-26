@@ -61,7 +61,7 @@ void MainWindow::on_actionGUARDAR_triggered()
             return;
     }
     QTextStream io(&arch);
-    io << ui->textEdit->toHtml(); // Asegúrate de que 'textEdit' es un QTextEdit
+    io << ui->textEdit->toHtml(); 
 
     arch.close();
 }
@@ -118,22 +118,19 @@ void MainWindow::on_actionREHACER_triggered()
 
 void MainWindow::on_actionFUENTES_triggered()
 {
-    // Obtener el formato actual del cursor de texto
+    
     QTextCharFormat formatoActual = ui->textEdit->textCursor().charFormat();
 
-    // Mostrar el diálogo de selección de fuente y actualizar el formato actual
+    
     bool siono;
     QFont fuenteNueva = QFontDialog::getFont(&siono, formatoActual.font(), this);
 
     if (siono)
-    {
-        // Establecer la fuente en el formato actual
+    {      
         formatoActual.setFont(fuenteNueva);
 
-        // Aplicar el formato actual al texto seleccionado (o al cursor)
         ui->textEdit->textCursor().mergeCharFormat(formatoActual);
     }
-    // No es necesario un "else" ya que si el usuario cancela, no realizas cambios.
 }
 
 
