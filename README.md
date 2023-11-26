@@ -1,5 +1,8 @@
 # PROYECTOFINAL
 Editor de texto en Qt Creator tipo Word
+
+
+
 void MainWindow::on_actionINSERTAR_triggered()
 {
     QFile arch;
