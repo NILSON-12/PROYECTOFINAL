@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ABRIR.png</file>
+        <file>COPIAR.png</file>
+        <file>CORTAR.png</file>
+        <file>deshacer.png</file>
+        <file>GUARDAR.webp</file>
+        <file>IMPRIMIR.png</file>
+        <file>nuevo.png</file>
+        <file>PEGAR.png</file>
+        <file>rehacer.png</file>
+        <file>logosa.jpg</file>
+        <file>hj.jpg</file>
+        <file>5700836.png</file>
+        <file>9803392.png</file>
+        <file>colorp.png</file>
+        <file>9784364.png</file>
+        <file>9785382.png</file>
+        <file>11225507.png</file>
+    </qresource>
+</RCC>

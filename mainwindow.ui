@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BLOC DE NOTAS</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="dd.qrc">
+    <normaloff>:/hj.jpg</normaloff>:/hj.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuARCHIVO">
+    <property name="title">
+     <string>ARCHIVO</string>
+    </property>
+    <addaction name="actionINSERTAR"/>
+    <addaction name="actionGUARDAR"/>
+    <addaction name="actionIMPRIMIR"/>
+   </widget>
+   <widget class="QMenu" name="menuEDICI_N">
+    <property name="title">
+     <string>FUNCIONES</string>
+    </property>
+    <addaction name="actionPEGAR"/>
+    <addaction name="actionCORTAR"/>
+    <addaction name="actionCOPIAR"/>
+    <addaction name="actionDESHACER"/>
+    <addaction name="actionREHACER"/>
+   </widget>
+   <widget class="QMenu" name="menuEDICI_N_2">
+    <property name="title">
+     <string>EDICIÓN</string>
+    </property>
+    <addaction name="actionFUENTES"/>
+    <addaction name="actionCOLOR"/>
+    <addaction name="actionCENTRAR"/>
+    <addaction name="actionDERECHA"/>
+    <addaction name="actionIZQUIERDA"/>
+   </widget>
+   <addaction name="menuARCHIVO"/>
+   <addaction name="menuEDICI_N"/>
+   <addaction name="menuEDICI_N_2"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionINSERTAR"/>
+   <addaction name="actionGUARDAR"/>
+   <addaction name="actionIMPRIMIR"/>
+   <addaction name="actionCOPIAR"/>
+   <addaction name="actionPEGAR"/>
+   <addaction name="actionCORTAR"/>
+   <addaction name="actionDESHACER"/>
+   <addaction name="actionREHACER"/>
+   <addaction name="actionFUENTES"/>
+   <addaction name="actionCOLOR"/>
+   <addaction name="actionIZQUIERDA"/>
+   <addaction name="actionCENTRAR"/>
+   <addaction name="actionDERECHA"/>
+  </widget>
+  <action name="actionINSERTAR">
+   <property name="icon">
+    <iconset resource="dd.qrc">
+     <normaloff>:/ABRIR.png</normaloff>:/ABRIR.png</iconset>
+   </property>
+   <property name="text">
+    <string>ABRIR</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionGUARDAR">
+   <property name="icon">
+    <iconset resource="dd.qrc">
+     <normaloff>:/5700836.png</normaloff>:/5700836.png</iconset>
+   </property>
+   <property name="text">
+    <string>GUARDAR COMO</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionIMPRIMIR">
+   <property name="icon">
+    <iconset resource="dd.qrc">
+     <normaloff>:/IMPRIMIR.png</normaloff>:/IMPRIMIR.png</iconset>
+   </property>
+   <property name="text">
+    <string>IMPRIMIR</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionPEGAR">
+   <property name="icon">
+    <iconset resource="dd.qrc">
+     <normaloff>:/PEGAR.png</normaloff>:/PEGAR.png</iconset>
+   </property>
+   <property name="text">
+    <string>PEGAR</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionCORTAR">
+   <property name="icon">
+    <iconset resource="dd.qrc">
+     <normaloff>:/CORTAR.png</normaloff>:/CORTAR.png</iconset>
+   </property>
+   <property name="text">
+    <string>CORTAR</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionCOPIAR">
+   <property name="icon">
+    <iconset resource="dd.qrc">
+     <normaloff>:/COPIAR.png</normaloff>:/COPIAR.png</iconset>
+   </property>
+   <property name="text">
+    <string>COPIAR</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionDESHACER">
+   <property name="icon">
+    <iconset resource="dd.qrc">
+     <normaloff>:/deshacer.png</normaloff>:/deshacer.png</iconset>
+   </property>
+   <property name="text">
+    <string>DESHACER</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionREHACER">
+   <property name="icon">
+    <iconset resource="dd.qrc">
+     <normaloff>:/rehacer.png</normaloff>:/rehacer.png</iconset>
+   </property>
+   <property name="text">
+    <string>REHACER</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionFUENTES">
+   <property name="icon">
+    <iconset resource="dd.qrc">
+     <normaloff>:/9803392.png</normaloff>:/9803392.png</iconset>
+   </property>
+   <property name="text">
+    <string>FUENTES</string>
+   </property>
+  </action>
+  <action name="actionCOLOR">
+   <property name="icon">
+    <iconset resource="dd.qrc">
+     <normaloff>:/colorp.png</normaloff>:/colorp.png</iconset>
+   </property>
+   <property name="text">
+    <string>COLOR</string>
+   </property>
+  </action>
+  <action name="actionCENTRAR">
+   <property name="icon">
+    <iconset resource="dd.qrc">
+     <normaloff>:/9785382.png</normaloff>:/9785382.png</iconset>
+   </property>
+   <property name="text">
+    <string>CENTRAR</string>
+   </property>
+  </action>
+  <action name="actionDERECHA">
+   <property name="icon">
+    <iconset resource="dd.qrc">
+     <normaloff>:/9784364.png</normaloff>:/9784364.png</iconset>
+   </property>
+   <property name="text">
+    <string>DERECHA </string>
+   </property>
+  </action>
+  <action name="actionIZQUIERDA">
+   <property name="icon">
+    <iconset resource="dd.qrc">
+     <normaloff>:/11225507.png</normaloff>:/11225507.png</iconset>
+   </property>
+   <property name="text">
+    <string>IZQUIERDA</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="dd.qrc"/>
+ </resources>
+ <connections/>
+</ui>
