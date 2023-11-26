@@ -28,4 +28,31 @@ Esta función abre un cuadro de diálogo para que el usuario seleccione un archi
 
 
 
+void MainWindow::on_actionGUARDAR_triggered()
+{
+  
+    QFile arch;
+    QString nombrearch;
+    nombrearch=QFileDialog::getSaveFileName(this, "GUARDE, BIEN PUEDA","", "Archivos de texto(*.html *.docx);;Todos los archivos()" );
+    arch.setFileName(nombrearch);
+    arch.open(QIODevice::WriteOnly | QIODevice::Text);
+    if(!arch.isOpen())
+   
+    {
+    
+        QMessageBox::critical(this, "ERROR MANÍ",  arch.errorString());
+            return;
+   
+    }
+  
+    QTextStream io(&arch);
+    io << ui->textEdit->toHtml(); 
+
+    arch.close();
+}
+
+esta función permite al usuario seleccionar o especificar un nombre y ubicación para guardar un archivo, y luego escribe el contenido del widget de texto (textEdit) en formato HTML en ese archivo.
+
+
+
 
