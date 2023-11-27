@@ -73,3 +73,45 @@ Esta función permite al usuario abrir el menú de impresión, para imprimir su 
 
 
 
+void MainWindow::on_actionPEGAR_triggered()
+{
+
+    ui->textEdit->paste();
+}
+
+
+void MainWindow::on_actionCORTAR_triggered()
+{
+
+    ui->textEdit->cut();
+}
+
+
+
+void MainWindow::on_actionCOPIAR_triggered()
+{
+  
+    ui->textEdit->copy();
+}
+
+
+void MainWindow::on_actionDESHACER_triggered()
+{
+
+    ui->textEdit->undo();
+}
+
+
+void MainWindow::on_actionREHACER_triggered()
+{
+
+    ui->textEdit->redo();
+}
+
+Funciones rápidas en las que permiten al usuario copiar,pegar,cortar,deshacer y rehacer lo escrito en el textEdit.
+
+
+
+
+
+
