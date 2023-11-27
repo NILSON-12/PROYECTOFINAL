@@ -24,6 +24,7 @@ void MainWindow::on_actionINSERTAR_triggered()
     arch.close();
 
 }
+
 Esta función abre un cuadro de diálogo para que el usuario seleccione un archivo, lee su contenido y lo coloca en un widget de texto (textEdit) en la interfaz de usuario.
 
 
@@ -51,8 +52,24 @@ void MainWindow::on_actionGUARDAR_triggered()
     arch.close();
 }
 
-esta función permite al usuario seleccionar o especificar un nombre y ubicación para guardar un archivo, y luego escribe el contenido del widget de texto (textEdit) en formato HTML en ese archivo.
+Esta función permite al usuario seleccionar o especificar un nombre y ubicación para guardar un archivo, y luego escribe el contenido del widget de texto (textEdit) en formato HTML en ese archivo.
 
+
+
+void MainWindow::on_actionIMPRIMIR_triggered()
+{
+  
+    QPrinter printer;
+    QPrintDialog dialog(&printer, this);
+
+    if (dialog.exec() == QDialog::Accepted) {
+
+    }
+
+
+}
+
+Esta función permite al usuario abrir el menú de impresión, para imprimir su archivo.
 
 
 
