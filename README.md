@@ -176,6 +176,26 @@ Estas funciones permiten cambiar el lado por el que se escribe, tanto por la izq
 
 
 
+#include "mainwindow.h"
+#include "./ui_mainwindow.h"
+#include <QFileDialog>
+#include <QTextStream>
+#include <QTextDocument>
+#include <QTextDocumentWriter>
+#include <QFile>
+#include <QMessageBox>
+#include <QtPrintSupport/QPrinter>
+#include <QtPrintSupport/QPrintDialog>
+#include <QFontDialog>
+#include <QFont>
+#include <QColorDialog>
+#include <QColor>
+#include <QTextEdit>
+
+Estas fueron las bibliotecas usadas para la creación de este Editor de texto 
+
+
+
 
 
 
