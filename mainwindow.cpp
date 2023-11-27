@@ -92,11 +92,6 @@ void MainWindow::on_actionCORTAR_triggered()
 }
 
 
-void MainWindow::on_actionNUEVO_triggered()
-{
-
-}
-
 
 void MainWindow::on_actionCOPIAR_triggered()
 {
