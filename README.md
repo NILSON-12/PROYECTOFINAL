@@ -214,14 +214,23 @@ Estas fueron las bibliotecas usadas para la creación de este Editor de texto
 -INFORMACIÓN-
 
 Nombre:
+
 Nilson Bernal Gonzalez
+
 Programa:
+
 Ingeniería en Sistemas y Computación
+
 Facultad:
+
 Facultad de Ingenierías 
+
 Asignatura:
+
 PROGRAMACIÓN II
+
 Correo:
+
 nilson.bernal.gonzalez@gmail.com 
 
 
